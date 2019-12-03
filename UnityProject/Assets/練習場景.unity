@@ -197,7 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hp: 50
   Atk: 0
-  Player: {fileID: 1284488705}
+  Player: {fileID: 1284488706}
   Aud: {fileID: 90077758}
   SoundAtk: {fileID: 8300000, guid: b2814898b8005b04dbb2fadf2cf26112, type: 3}
 --- !u!82 &90077758
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hp: 100
   Atk: 0
-  Zb: {fileID: 90077756}
+  Zb: {fileID: 90077757}
   Aud: {fileID: 1284488707}
   SoundAtk: {fileID: 8300000, guid: e5596bb1fd662e5418d0d33c355a4478, type: 3}
 --- !u!82 &1284488707

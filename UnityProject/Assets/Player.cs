@@ -7,31 +7,41 @@ public class Player : MonoBehaviour
     [Header("攻擊力")]
     public float Atk;
     [Header("殭屍")]
-    public GameObject Zb;
+    public Zombie Zb;  // 可以使用Zombie的參數
     [Header("喇叭")]
     public AudioSource Aud;
     [Header("音效")]
     public AudioClip SoundAtk;
 
-    private void Start()
+
+    public void Attake() // 玩家的攻擊
     {
-        
-    }
-    private void Update()
-    {
-        
         if (Input.GetKeyDown("a"))
         {
             Atk = Random.Range(10f, 20f);
             print("殭屍受到的傷害: " + Atk);
+            Zb.Hurt(Atk);
         }
-        else if (Input.GetKeyDown("d"))
-        {
-            print("玩家剩餘的血量: " + (Hp - Atk));
-        }
-        
-        
+    }
 
+    public void Hurt(float damage) // 玩家的受傷
+    {
+        Hp = Hp - damage;
+        print("玩家剩下的血量: " + Hp);
+    }
+
+    public void Dead() // 玩家的死亡
+    {
+        if (Hp <= 0)
+        {
+            print("玩家死亡");
+        }
+    }
+
+    private void Update()
+    {
+        Attake();
+        Dead();
     }
     
 }
