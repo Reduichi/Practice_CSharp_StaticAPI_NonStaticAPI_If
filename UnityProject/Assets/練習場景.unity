@@ -198,6 +198,8 @@ MonoBehaviour:
   Hp: 50
   Atk: 0
   Player: {fileID: 1284488705}
+  Aud: {fileID: 90077758}
+  SoundAtk: {fileID: 8300000, guid: b2814898b8005b04dbb2fadf2cf26112, type: 3}
 --- !u!82 &90077758
 AudioSource:
   m_ObjectHideFlags: 0
@@ -463,8 +465,8 @@ MonoBehaviour:
   Hp: 100
   Atk: 0
   Zb: {fileID: 90077756}
-  Aud: {fileID: 0}
-  SoundAtk: {fileID: 0}
+  Aud: {fileID: 1284488707}
+  SoundAtk: {fileID: 8300000, guid: e5596bb1fd662e5418d0d33c355a4478, type: 3}
 --- !u!82 &1284488707
 AudioSource:
   m_ObjectHideFlags: 0
